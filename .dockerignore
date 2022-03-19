@@ -1,0 +1,10 @@
+node_modules/
+build/
+.eslint*
+.*ignore
+LICENSE
+*.md
+test/
+environment.dev.json
+Dockerfile
+docker-compose.yml

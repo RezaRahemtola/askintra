@@ -1,0 +1,16 @@
+version: '3.1'
+
+services:
+  askintra:
+    container_name: askintra
+    build: .
+    restart: on-failure
+    depends_on:
+      - database
+  database:
+    container_name: database
+    image: mariadb:10
+    environment:
+      MARIADB_USER: askintra
+      MARIADB_DATABASE: askintra
+    restart: on-failure

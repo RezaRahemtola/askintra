@@ -14,3 +14,5 @@ services:
       MARIADB_USER: askintra
       MARIADB_DATABASE: askintra
     restart: on-failure
+    expose:
+      - 3306
